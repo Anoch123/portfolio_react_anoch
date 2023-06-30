@@ -57,9 +57,14 @@ export const projects = [
   ];
 
   export const NavLinks = [
-    { href: '/', key: 'Inspiration', text: 'Inspiration' },
-    { href: '/', key: 'Find Projects', text: 'Find Projects' },
-    { href: '/', key: 'Learn Development', text: 'Learn Development' },
-    { href: '/', key: 'Career Advancement', text: 'Career Advancement' },
-    { href: '/', key: 'Hire Developers', text: 'Hire Developers' }
+    { href: '/', key: 'Home', text: 'Home' },
+    { href: '/', key: 'About Me', text: 'About Me' },
+    { href: '/', key: 'Projects', text: 'Projects' },
+    { href: '/', key: 'Skills', text: 'Skills' },
+    { href: '/', key: 'Contact', text: 'Contact' },
+  ];
+
+  export const TechStacks = [
+    {key: 'Contact', text: 'Contact'},
+    {key: 'Contact', text: 'Contact'}
   ];
