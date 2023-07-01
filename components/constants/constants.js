@@ -65,6 +65,11 @@ export const projects = [
   ];
 
   export const TechStacks = [
-    {key: 'Contact', text: 'Contact'},
-    {key: 'Contact', text: 'Contact'}
+    {key: 'ReactJs', text: 'React Js'},
+    {key: 'Node Js', text: 'Node Js'},
+    {key: 'Next Js', text: 'Next Js'},
+    {key: 'Javascript', text: 'Javascript'},
+    {key: 'Jquery', text: 'Jquery'},
+    {key: 'Mongo DB', text: 'Mongo DB'},
+    {key: 'MYSQL', text: 'MYSQL'}
   ];
