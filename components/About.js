@@ -5,7 +5,7 @@ import PageStarter from './PageStarter'
 
 const About = () => {
   return (
-    <div className='sm:mt-12 mt-24 padding-x padding-y max-width' id='discover'>
+    <div className='sm:-mt-12 -mt-12 padding-x padding-y max-width' id='discover'>
         <PageStarter title="ABOUT ME" subTitle="Oh this was such a lovely Journey!"/>
         <div className='w-full sm:w-4/6 mt-4'>
           {
