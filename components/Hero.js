@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { XMarkIcon, Bars3Icon } from '@heroicons/react/24/outline'
 import Navbar from './Navbar';
-import { NavLinks, TechStacks } from './constants/constants'
+import { NavLinks } from './constants/constants'
 
 const Hero = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -120,15 +120,6 @@ const Hero = () => {
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Hi, I'm Anoch Dissanayake. A passionate Full-Stack Developer based in Sri Lanka. Pro tip (I love React js and Node js) 📍
             </p>
-            <div className='mt-5 flex items-center justify-center gap-x-6'>
-              <div class="flex flex-wrap">
-                <div class="w-full md:w-auto flex">
-                {TechStacks.map((item) => (
-                  <ul className="mx-2" key={item.key}>{item.text}</ul>
-                ))}
-                </div>
-              </div>
-            </div>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
