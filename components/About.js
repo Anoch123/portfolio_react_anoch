@@ -5,18 +5,20 @@ import PageStarter from './PageStarter'
 
 const About = () => {
   return (
-    <div className='sm:-mt-12 -mt-12 padding-x padding-y max-width' id='discover'>
-        <PageStarter title="ABOUT ME" subTitle="Oh this was such a lovely Journey!"/>
-        <div className='w-full sm:w-4/6 mt-4'>
+    <div className='sm:-mt-16 -mt-12 padding-x padding-y max-width'>
+      <div className='grid grid-cols gap-4 md:grid-cols-2 lg:grid-cols-2'>
+        <div>
+          <PageStarter title="ABOUT ME" subTitle="Oh this was such a lovely Journey!"/>
           {
             Aboutme.map((p,i) => {
               return (
-                <p className="" key={i}>{p.description}</p>
+                <p className="mt-5" key={i}>{p.description}</p>
               )
             })
           }
         </div>
         <Timeline/>
+      </div>        
     </div>
   )
 }
