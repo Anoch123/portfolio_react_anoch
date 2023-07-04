@@ -60,7 +60,6 @@ export const projects = [
     { href: '/', key: 'Home', text: 'Home' },
     { href: '/', key: 'About Me', text: 'About Me' },
     { href: '/', key: 'Projects', text: 'Projects' },
-    { href: '/', key: 'Skills', text: 'Skills' },
     { href: '/', key: 'Contact', text: 'Contact' },
   ];
 
