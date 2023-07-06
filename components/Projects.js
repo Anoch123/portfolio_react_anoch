@@ -7,11 +7,11 @@ import PageStarter from './PageStarter';
 const Projects = () => {
   return (
     <div className='mt-12 padding-x padding-y max-width' id='projects'>
-      <PageStarter title="PROEJCTS" subTitle="I would love to collaborate with new projects. Please Feel free to contact me anytime!." />
+      <PageStarter title="PROEJCTS" subTitle="Each project is a unique piece of development 🧩" />
       <div class="grid gap-x-6 lg:grid-cols-3 lg:gap-x-12">
         {projects.map((p, i) => {
             return (
-              <div key={i} class="mb-6 mt-5 block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] light:bg-neutral-700 lg:mb-0" data-te-ripple-init data-te-ripple-color="light">
+              <div key={i} class="mb-6 mt-16 block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] light:bg-neutral-700 lg:mb-0" data-te-ripple-init data-te-ripple-color="light">
                 <div class="relative overflow-hidden bg-cover bg-no-repeat">
                   <Image src={p.image} width={800} height={800} class="w-full rounded-t-lg" />
                   <a href="#!">

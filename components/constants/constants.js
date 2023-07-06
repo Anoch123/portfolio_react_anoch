@@ -72,3 +72,8 @@ export const projects = [
     {key: 'Mongo DB', text: 'Mongo DB'},
     {key: 'MYSQL', text: 'MYSQL'}
   ];
+
+  export const ContactDetails = [
+    {key: 'location', type: 'Location', details: '52B, Station Road Maggona Kaluthara Sri Lanka', image: '/location.svg'},
+    {key: 'email', type: 'Mail', details: 'anochdissanayake@gmail.com', image: '/email.svg'}
+  ];
