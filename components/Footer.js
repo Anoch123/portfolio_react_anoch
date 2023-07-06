@@ -9,16 +9,10 @@ const Footer = () => {
 
         <div className="footer__copyrights-link">
           <Link href="https://github.com/Anoch123" className="text-gray-500">
-            GitHub
+            Github
           </Link>
-          <Link href="/" className="text-gray-500">
-            Contact
-          </Link>
-          <Link href="/" className="text-gray-500">
-            About
-          </Link>
-          <Link href="/" className="text-gray-500">
-            Projects
+          <Link href="https://lk.linkedin.com/in/anoch-dissanayake-71a9aa172" className="text-gray-500">
+            LinkedIn
           </Link>
         </div>
       </div>

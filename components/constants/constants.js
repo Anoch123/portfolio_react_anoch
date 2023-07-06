@@ -57,10 +57,10 @@ export const projects = [
   ];
 
   export const NavLinks = [
-    { href: '/', key: 'Home', text: 'Home' },
-    { href: '/', key: 'About Me', text: 'About Me' },
-    { href: '/', key: 'Projects', text: 'Projects' },
-    { href: '/', key: 'Contact', text: 'Contact' },
+    { key: 'home', text: 'Home'},
+    { key: 'aboutme', text: 'About Me'},
+    { key: 'projects', text: 'Projects'},
+    { key: 'contact', text: 'Contact'},
   ];
 
   export const TechStacks = [

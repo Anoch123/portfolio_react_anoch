@@ -5,10 +5,24 @@ import { XMarkIcon, Bars3Icon } from '@heroicons/react/24/outline'
 import { NavLinks } from './constants/constants'
 
 const Hero = () => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const handleScroll = (event) => {
+    const nameDet = event.target.getAttribute('name');
+    
+    const nextSection = document.getElementById(nameDet);
+    
+    if(nextSection){
+      nextSection.scrollIntoView({ behavior: "smooth" });
+
+      if(mobileMenuOpen == true){
+        setMobileMenuOpen(false)
+      }
+    }
+  };
 
   return (
-    <div id="heroSection">
+    <div id="home">
       <header className="absolute inset-x-0 top-0 z-50">
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
@@ -28,9 +42,9 @@ const Hero = () => {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {NavLinks.map((item) => (
-              <a key={item.key} href={item.href} className="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-700 duration-300">
+              <button key={item.key} name={item.key} onClick={handleScroll} className="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-700 duration-300">
                 {item.text}
-              </a>
+              </button>
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -59,13 +73,14 @@ const Hero = () => {
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
                   {NavLinks.map((item) => (
-                    <a
+                    <button
                       key={item.key}
-                      href={item.href}
+                      name={item.key}
+                      onClick={handleScroll}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       {item.text}
-                    </a>
+                    </button>
                   ))}
                 </div>
                 <div className="py-6">
