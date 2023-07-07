@@ -1,7 +1,6 @@
 import React from 'react'
 import { projects } from './constants/constants';
 import Image from 'next/image';
-import CustomButton from './CustomButton';
 import PageStarter from './PageStarter';
 
 const Projects = () => {
