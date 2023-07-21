@@ -12,7 +12,7 @@ export const projects = [
   export const Aboutme = [
     {
       id: 1,
-      description: 'Welcome to my portfolio website! I am a skilled and passionate software engineer with two years of professional experience. With expertise in a wide range of technologies, including React, React Native, PHP, Node.js, HTML, Bootstrap, MySQL, Firebase, jQuery, JavaScript, and Tailwind CSS, I am dedicated to delivering exceptional web and mobile applications.'
+      description: 'I am a skilled and passionate software engineer with two years of professional experience. With expertise in a wide range of technologies, including React, React Native, PHP, Node.js, HTML, Bootstrap, MySQL, Firebase, jQuery, JavaScript, and Tailwind CSS, I am dedicated to delivering exceptional web and mobile applications.'
     },
     {
       id: 2,
