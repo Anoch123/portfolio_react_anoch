@@ -12,7 +12,7 @@ export const projects = [
   export const Aboutme = [
     {
       id: 1,
-      description: 'I am a skilled and passionate software engineer with two years of professional experience. With expertise in a wide range of technologies, including React, React Native, PHP, Node.js, HTML, Bootstrap, MySQL, Firebase, jQuery, JavaScript, and Tailwind CSS, I am dedicated to delivering exceptional web and mobile applications.'
+      description: 'I am a skilled and passionate software engineer with two years of professional experience. With expertise in a wide range of technologies, including React, React Native, PHP, Node.js, HTML, Bootstrap, MySQL, Firebase, jQuery, JavaScript, Typescript, MongoDB and Tailwind CSS, I am dedicated to delivering exceptional web and mobile applications.'
     },
     {
       id: 2,
@@ -28,6 +28,6 @@ export const projects = [
   ];
 
   export const ContactDetails = [
-    {key: 'location', type: 'Location', details: '52B, Station Road Maggona Kaluthara Sri Lanka', image: '/location.svg'},
+    {key: 'location', type: 'Location', details: 'Station Road Maggona Kaluthara Sri Lanka', image: '/location.svg'},
     {key: 'email', type: 'Mail', details: 'anochdissanayake@gmail.com', image: '/email.svg'}
   ];
