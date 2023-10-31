@@ -6,7 +6,7 @@ import PageStarter from './PageStarter';
 const Projects = () => {
   return (
     <div className='mt-12 padding-x padding-y max-width' id='projects'>
-      <PageStarter title="PROEJCTS" subTitle="Each project is a unique piece of development 🧩" />
+      <PageStarter title="PROJECTS" subTitle="Each project is a unique piece of development 🧩" />
       <div className="grid gap-x-6 lg:grid-cols-3 lg:gap-x-12">
         {projects.map((p, i) => {
             return (
