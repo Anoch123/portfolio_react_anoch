@@ -15,7 +15,7 @@ export const projects = [
     },
     {
       title: 'Next JS E-Commerce Admin Panel for the Client view',
-      description: "I've developed an admin panel for the e-commerce project i've been working on. this admin panel though me how to seamlessly communicate with the e-commerce client side with just an api created using the this admin panel. i've had the ability to learn react hook form, zod, cloudinary and an ORM named prisma",
+      description: "I've developed an admin panel for the e-commerce project i've been working on. this admin panel tought me how to seamlessly communicate with the e-commerce client side with just an api created using the this admin panel. i've had the ability to learn react hook form, zod, cloudinary and an ORM named prisma",
       image: '/images/ecommerce_admin_panel.png',
       tags: ['Next JS', 'Typescript', 'MYSQL', 'Prisma', 'Cloudinary'],
       id: 2,
