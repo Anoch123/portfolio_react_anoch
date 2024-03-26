@@ -29,6 +29,9 @@ const Projects = () => {
                       return <a href="#" className="block font-medium text-purple-600 mt-5" key={i}>{t}</a>;
                     })}
                   </div>
+                  <div className='flex gap-4 mt-5'>
+                    <span className='text-gray-500 text-sm'>Status: {p.status}</span>
+                  </div>
                 </div>
               </div>
             )
