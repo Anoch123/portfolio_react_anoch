@@ -23,12 +23,12 @@ const Projects = () => {
                   <p className="mb-6">
                     {p.description}
                   </p>
-                  <div className="z-20 w-full text-blue-950 font-semibold">Technologies Used</div>
+                  {/* <div className="z-20 w-full text-blue-950 font-semibold">Technologies Used</div>
                   <div className='flex gap-4'>
                     {p.tags.map((t, i) => {
                       return <a href="#" className="block font-medium text-purple-600 mt-5" key={i}>{t}</a>;
                     })}
-                  </div>
+                  </div> */}
                   <div className='flex gap-4 mt-5'>
                     <span className='text-gray-500 text-sm'>Status: {p.status}</span>
                   </div>
