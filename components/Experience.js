@@ -1,67 +1,17 @@
 'use client'
 import React, { useState } from 'react';
+import { workExperience } from './constants/constants';
+import Heading_Center from './Heading_Center';
 
-// Sample data - replace with your actual career journey
-const workExperience = [
-  {
-    id: 1,
-    company: "Tech Startup Inc.",
-    position: "Frontend Developer",
-    duration: "2024 - Present",
-    location: "San Francisco, CA",
-    type: "Current",
-    description: "Building cutting-edge web applications with React and modern JavaScript frameworks.",
-    skills: ["React", "TypeScript", "Node.js", "AWS"],
-    achievements: ["Led UI redesign increasing user engagement by 40%", "Mentored 3 junior developers"],
-    color: "from-blue-500 to-purple-600"
-  },
-  {
-    id: 2,
-    company: "Digital Agency Ltd.",
-    position: "Full Stack Developer",
-    duration: "2022 - 2024",
-    location: "New York, NY",
-    type: "Previous",
-    description: "Developed end-to-end solutions for diverse clients across various industries.",
-    skills: ["JavaScript", "Python", "MySQL", "Docker"],
-    achievements: ["Delivered 15+ client projects on time", "Improved app performance by 60%"],
-    color: "from-green-500 to-teal-600"
-  },
-  {
-    id: 3,
-    company: "Creative Solutions Co.",
-    position: "Junior Developer",
-    duration: "2021 - 2022",
-    location: "Remote",
-    type: "Previous",
-    description: "Started my professional journey, learning industry best practices and contributing to team projects.",
-    skills: ["HTML", "CSS", "JavaScript", "Git"],
-    achievements: ["Completed intensive training program", "Built first production application"],
-    color: "from-orange-500 to-red-600"
-  }
-];
-
-const Work = () => {
+const Experience = () => {
   const [selectedJob, setSelectedJob] = useState(workExperience[0]);
   const [hoveredJob, setHoveredJob] = useState(null);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 py-16 px-6">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 py-16 px-6" id="experience">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
-            {/* <TrendingUp size={16} /> */}
-            Career Journey
-          </div>
-          <h1 className="text-5xl font-bold text-gray-900 mb-4">
-            WORK LIFE
-          </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Oh this was such a lovely Journey! From curious beginner to seasoned professional, 
-            here's how my career has evolved across different companies and challenges.
-          </p>
-        </div>
+        <Heading_Center title={"Career Journey"} subTitle={"WORK LIFE"} description={"Oh this was such a lovely Journey! From curious beginner to seasoned professional, here's how my career has evolved across different companies and challenges."}/>
 
         {/* Main Content Grid */}
         <div className="grid lg:grid-cols-3 gap-8">
@@ -205,11 +155,11 @@ const Work = () => {
                 <div className="text-sm text-gray-600">Companies</div>
               </div>
               <div className="bg-white p-6 rounded-xl shadow-md text-center">
-                <div className="text-3xl font-bold text-green-600 mb-2">3+</div>
+                <div className="text-3xl font-bold text-green-600 mb-2">4+</div>
                 <div className="text-sm text-gray-600">Years Experience</div>
               </div>
               <div className="bg-white p-6 rounded-xl shadow-md text-center">
-                <div className="text-3xl font-bold text-purple-600 mb-2">15+</div>
+                <div className="text-3xl font-bold text-purple-600 mb-2">6+</div>
                 <div className="text-sm text-gray-600">Projects Delivered</div>
               </div>
             </div>
@@ -232,4 +182,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default Experience;
