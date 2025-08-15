@@ -1,14 +1,14 @@
 import React from 'react'
 import { Aboutme } from './constants/constants'
 import Timeline from './Timeline'
-import PageStarter from './PageStarter'
+import Heading_Left from './Heading_Left'
 
 const About = () => {
   return (
-    <div className='sm:-mt-16 -mt-12 padding-x padding-y max-width' id="aboutme">
+    <div className='sm:-mt-1 mt-12 padding-x padding-y max-width' id="aboutme">
       <div className='grid grid-cols gap-4 md:grid-cols-2 lg:grid-cols-2'>
         <div>
-          <PageStarter title="ABOUT ME" subTitle="Oh this was such a lovely Journey!"/>
+          <Heading_Left title="ABOUT ME" subTitle="Oh this was such a lovely Journey!"/>
           {
             Aboutme.map((p,i) => {
               return (

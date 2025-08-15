@@ -1,12 +1,12 @@
 import React from 'react'
 import { projects } from './constants/constants';
 import Image from 'next/image';
-import PageStarter from './PageStarter';
+import Heading_Left from './Heading_Left';
 
 const Projects = () => {
   return (
     <div className='mt-12 padding-x padding-y max-width' id='projects'>
-      <PageStarter title="PROJECTS" subTitle="Each project is a unique piece of development 🧩" />
+      <Heading_Left title="PROJECTS" subTitle="Each project is a unique piece of development 🧩" />
       <div className="grid gap-x-6 lg:grid-cols-3 lg:gap-x-12">
         {projects.map((p, i) => {
             return (
