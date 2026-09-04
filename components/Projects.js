@@ -12,7 +12,13 @@ const Projects = () => {
             return (
               <div key={i} className="mb-6 mt-16 block rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] light:bg-neutral-700 lg:mb-0" data-te-ripple-init data-te-ripple-color="light">
                 <div className="relative overflow-hidden bg-cover bg-no-repeat">
-                  <Image src={p.image} width={800} height={800} alt={p.image} className="w-full rounded-t-lg" />
+                  <img
+  src={p.image}
+  width={800}
+  height={800}
+  alt={p.title}
+  className="w-full rounded-t-lg"
+/>
                   <a href="#!">
                     <div
                       className="absolute top-0 right-0 bottom-0 left-0 h-full w-full bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,98.4%,0.2)]"></div>
