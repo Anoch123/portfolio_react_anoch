@@ -6,8 +6,6 @@ import { NavLinks, techStackIcons } from './constants/constants'
 import { createClient } from '@supabase/supabase-js'
 import Image from 'next/image';
 
-const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL, process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY)
-
 const Hero = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [basicInfoMap, setBasicInfoMap] = useState(new Map());
@@ -18,25 +16,6 @@ const Hero = () => {
     if (nextSection) {
       nextSection.scrollIntoView({ behavior: "smooth" });
       setMobileMenuOpen(false);
-    }
-  };
-
-  useEffect(() => {
-    get_Basic_Info_superbase();
-  }, [])
-
-  const get_Basic_Info_superbase = async () => {
-    let { data: basic_info, error } = await supabase
-      .from('basic_info')
-      .select('*');
-    if (error) {
-      console.error("Supabase error:", error);
-    } else {
-      const infoMap = new Map();
-      basic_info.forEach(item => {
-        infoMap.set(item.basic_info_id, item);
-      });
-      setBasicInfoMap(infoMap);
     }
   };
 
@@ -129,10 +108,10 @@ const Hero = () => {
         {basicInfo && (
           <div className="mx-auto max-w-3xl">
             <h1 className="text-6xl sm:text-7xl font-extrabold tracking-tight text-black mb-4 leading-tight">
-              {basicInfo.website_main_title} <span className='text-4xl'>&#128075;</span>
+              Full-Stack Developer <span className='text-4xl'>&#128075;</span>
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              {basicInfo.website_sub_title}
+              Hi, I'm Anoch Dissanayake. A passionate Full-Stack Developer with DevOps skills based in Kaluthara, Sri Lanka 📍
             </p>
           </div>
         )}
