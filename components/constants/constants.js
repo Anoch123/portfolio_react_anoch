@@ -13,7 +13,7 @@ export const projects = [
     description:
       "Contributed to backend services powering Sri Lanka’s electric mobility ecosystem. Developed APIs for battery swapping, home charging, customer package management, payment integrations, and staff authentication using Go, Yii2, MySQL, DynamoDB, AWS Lambda, and AWS Cognito.",
     image: "/images/lencar.png",
-    tags: ["Go", "Yii2", "AWS", "MySQL", "DynamoDB", "Flutter"],
+    tags: ["Next.js", "AWS", "S3"],
     status: "Completed",
     id: 1,
   },
@@ -23,7 +23,11 @@ export const projects = [
     description:
       "Designed and developed a modern tourism platform showcasing Sri Lankan experiences, destinations, and booking capabilities. Focused on responsive UI/UX, performance optimization, SEO, and scalable architecture.",
     image: "/images/lankalagoontours.png",
-    tags: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS"],
+    tags: ["Next.js",
+      "TypeScript",
+      "Supabase",
+      "PostgreSQL",
+      "Tailwind CSS",],
     status: "Ongoing",
     id: 2,
   },
@@ -33,7 +37,11 @@ export const projects = [
     description:
       "Built and managed the digital presence of AGAPE GEAR, a faith-inspired performance and lifestyle clothing brand. Developed the website, product catalog, marketing assets, social media campaigns, and customer ordering workflows.",
     image: "/images/agape.png",
-    tags: ["Next.js", "E-Commerce", "Branding", "Marketing", "Tailwind CSS"],
+    tags: ["Next.js",
+      "TypeScript",
+      "Supabase",
+      "PostgreSQL",
+      "Tailwind CSS",],
     status: "Completed",
     id: 3,
   },
@@ -45,7 +53,6 @@ export const projects = [
     tags: [
       "Next.js",
       "TypeScript",
-      "Node.js",
       "Supabase",
       "PostgreSQL",
       "Tailwind CSS",
